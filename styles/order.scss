@@ -1,0 +1,116 @@
+.order {
+  padding: 50px 15px;
+  background-color: $color-light;
+
+  @include for-large-up {
+    padding: 73px 0 72px 0;
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  &__details {
+    max-width: 555px;
+  }
+
+  &__img {
+    width: 200px;
+    margin: 0 auto;
+
+    @include for-large-up {
+      width: 269.41px;
+      margin-right: 121.59px;
+      margin-left: 224px;
+      height: 296px;
+    }
+  }
+
+  &__illustration {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    margin-top: 40px;
+    margin-bottom: 18px;
+
+    @include for-large-up {
+      text-align: start;
+      margin-top: 33px;
+      margin-bottom: 12px;
+      height: 48px;
+    }
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 32px;
+    margin: 0;
+    height: 167px;
+
+    @include for-large-up {
+      height: auto;
+    }
+  }
+
+  &__form {
+    @include for-large-up {
+      display: flex;
+      margin-top: 26px;
+    }
+  }
+
+  &__email {
+    margin-top: 40px;
+    background: #ffffff;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    height: 48px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 13px;
+
+    @include for-large-up {
+      margin-top: 0;
+    }
+
+    &::placeholder {
+      color: $color-dark;
+    }
+  }
+
+  button.order__button {
+    margin-top: 12px;
+
+    @include for-large-down {
+      width: 100%;
+    }
+
+    @include for-large-up {
+      margin-top: 0;
+      margin-left: 10px;
+      width: 160px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__terms {
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color-light-grey;
+    margin-top: 10px; /**/
+    margin-bottom: 0;
+  }
+
+  &__terms-link {
+    color: $text-color-blue;
+  }
+}
