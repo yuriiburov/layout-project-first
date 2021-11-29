@@ -4,7 +4,8 @@
   flex-direction: column;
 
   @include for-large-up {
-    padding: 0 0 110px 125px;
+    padding-bottom: 110px;
+    align-items: center;
   }
 
   &__container {
@@ -65,6 +66,9 @@
 
   &__card {
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @include for-large-up {
       padding-bottom: 0;
@@ -76,7 +80,7 @@
     &-img {
       padding-top: 40px;
       padding-bottom: 17px;
-      width: 100%;
+      max-width: 100%;
 
       @include for-large-up {
         padding-bottom: 15px;

@@ -1,13 +1,13 @@
 .inbox {
-  background-color: $color-orange-light;
-  padding: 50px 15px 48px 15px;
   display: flex;
   flex-direction: column;
+  padding: 50px 15px 48px 15px;
+  background-color: $color-orange-light;
 
   @include for-large-up {
     margin-top: 110px;
-    padding: 0 99px 0 193px;
     flex-direction: row;
+    justify-content: center;
   }
 
   &__card {
@@ -18,8 +18,10 @@
   }
 
   &__illustrate {
-    width: 100%;
+    max-width: 100%;
     padding-bottom: 32px;
+    display: block;
+    margin: auto;
 
     @include for-large-up {
       padding-top: 142px;

@@ -89,15 +89,16 @@
 }
 
 .additional-navigation {
-  margin-left: 15px;
-  margin-right: 15px;
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
 
   @include for-large-up {
     margin-top: 60px;
     flex-direction: row;
     margin-left: auto;
+    align-items: start;
   }
 
   &__column {

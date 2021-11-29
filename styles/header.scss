@@ -1,7 +1,5 @@
 .top-section {
   background-color: #f3c6bd;
-  width: 320px; // have delete
-  margin: 0 auto; // have delete
 
   @include for-large-up {
     padding-top: 39px;
@@ -39,19 +37,19 @@
     border: none;
     border-left: 1px solid #00000026;
     background-color: #fff;
-    margin-right: auto;
+    margin-left: auto;
 
     @include for-large-up {
       display: none;
     }
   }
 
-  // &__menu-icon {
-  //   width: 18px;
-  //   height: 13px;
-  //   background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png');
-  //   display: inline-block;
-  // }
+  &__menu-icon {
+    width: 18px;
+    height: 13px;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png');
+    display: inline-block;
+  }
 }
 
 .navigation {

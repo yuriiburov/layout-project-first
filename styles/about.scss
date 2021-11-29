@@ -5,9 +5,17 @@
 
   @include for-large-up {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     padding: 77px 130px 76px 130px;
+  }
+}
+
+.articles {
+  @include for-large-up {
+    width: 1140px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
   }
 }
 
